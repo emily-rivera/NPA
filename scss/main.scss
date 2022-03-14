@@ -1,0 +1,199 @@
+@import "functions";
+@import "variables";
+
+$font-family-sans-serif: "adrianna", sans-serif;
+$font-family-serif: "utopia-std", serif;
+$enable-responsive-font-sizes: true;
+$enable-shadows: true;
+
+$theme-colors: (
+  "blue": #9FC5BD,
+  "yellow": #EFBA55,
+  "green": #D4E09A,
+  "red": #BE4E27,
+  "light-red": #DD9363,
+  "white": #FFFFFF,
+  "dark-blue": #3d405b
+);
+
+@import "bootstrap";
+
+body {
+  font-family: $font-family-sans-serif;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239fc5bd' fill-opacity='0.43' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+// Navbar Styles
+.nav-item,
+.subscribeBtn,
+.getInvolvedBtn {
+  font-family: $font-family-sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.navbar-dark {
+  background-color: transparent !important;
+}
+
+.navbar-dark.scrolled {
+  background-color: #D4E09A !important;
+}
+
+.donateBtn {
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+// Hero Section
+.hero-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.jpg') center/cover no-repeat;
+  height: 100vh;
+}
+
+.hero-text {
+  font-family: $font-family-serif;
+}
+
+.hero-p, .hero-scroll {
+  letter-spacing: 0.05em;
+  font-weight: 100;
+  font-style: normal;
+}
+
+// What We Do Section
+.whatWeDoP {
+  height: 150px;
+}
+
+.whatWeDoImg {
+  width: 100px;
+  height: 100px;
+}
+
+.whatWeDoHeader,
+.whatWeDoBtn,
+.sectionHeader {
+  font-family: $font-family-serif;
+}
+
+// Who We Are Section
+
+.whoWeAreP {
+  font-size: 25px;
+}
+
+.whoWeAreName,
+.readMore {
+  font-family: $font-family-serif;
+}
+
+// Testimony Section
+.testimonyCarousel {
+  width: 100%;
+}
+
+.testQ {
+  font-family: $font-family-serif;
+}
+
+.testimony-1,
+.testimony-2,
+.testimony-3,
+.testimony-4 {
+  width: 75%;
+  border-radius: 50%;
+}
+
+.img-thumbnail {
+  background: #D4E09A;
+}
+
+// Latest News Section
+.newsCard-1 {
+  border-bottom: 10px solid #9FC5BD;
+}
+
+.newsCard-2 {
+  border-bottom: 10px solid #EFBA55;
+}
+
+.newsCard-3 {
+  border-bottom: 10px solid #D4E09A;
+}
+
+.card-title {
+  font-family: $font-family-serif;
+  font-weight: bold;
+}
+
+.newsBody {
+  height: 225px;
+}
+
+// Footer
+.footerHead {
+  font-family: $font-family-serif;
+}
+
+// Donate Page
+.donate-hero-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/donate-hero.jpg') center/cover no-repeat;
+  height: 100%;
+}
+
+.donate-h1 {
+  font-family: $font-family-serif;
+}
+
+.form-check-label-1 {
+  font-size: 35px;
+  margin-left: 15px;
+}
+
+.form-check-label {
+  font-size: 20px;
+}
+
+input[type=radio] {
+  width: 20px;
+  height: 20px;
+}
+
+// Our Story Page
+.storyBody,
+.contactBody {
+  background-color: #BE4E27;
+}
+
+.story-h3 {
+  font-family: $font-family-serif;
+}
+
+.about-hero-image {
+  background: url('../images/hero-background.svg') center/cover no-repeat;
+  height: 60vh;
+}
+
+.hero-text {
+  font-family: $font-family-serif;
+}
+
+// Contact Page
+.contact-head {
+  font-family: $font-family-serif;
+}
+
+.contact-bg {
+  background: url('../images/hero-background.svg') center/cover no-repeat;
+}
+
+.contact-txt {
+  font-family: $font-family-sans-serif;
+  font-weight: light;
+  text-transform: lowercase;
+}
+
+.contact-small {
+  font-weight: lighter;
+}
